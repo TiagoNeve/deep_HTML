@@ -25,3 +25,6 @@ Formatação de textos dentro do html utilizando tags, como:
 <sub> -> Coloca um valor na parte debaixo
 <sup> -> Coloca um valor encima do elemnto 
 ```
+
+## Cochetes e citações
+ 
