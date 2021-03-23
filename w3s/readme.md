@@ -36,5 +36,10 @@ Utilizado para gerar citações e cochetes
 <address> -> Para informações de contato. Deve-se sempre utilizar essas declarações, considerando sempre a acessibilidade.
 <cite> -> Define o titulo de alguma obra de arte.
 <bdo> -> Define a forma de como as letras serão organizadas no html
+```
+## Comentários
 
+Os comentários são usados para os desenvolvedores se comunicarem entre si
+```html
+<!-- Aqui fica um comentário -->
 ```
