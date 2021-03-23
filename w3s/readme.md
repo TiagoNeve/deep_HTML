@@ -43,3 +43,12 @@ Os comentários são usados para os desenvolvedores se comunicarem entre si
 ```html
 <!-- Aqui fica um comentário -->
 ```
+## Cores html e Css
+
+Simplesmente utilizado a tag style, não é recomendado utilizar diretamente no html
+o correto seria separar essas estilizações em um arquivo css.
+```html
+<elemento style=""> -> inline css
+<style></style> -> Internal css
+<link rel="stylesheet" href="styles.css"> -> External css
+```
