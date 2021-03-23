@@ -253,3 +253,12 @@ os mesmo no javascript
 Id -> Utilizado para estilizar apenas um elemento e referenciar apenas um elemento
 no javascript.
 
+## Iframes
+
+Utilizado para mostrar outro html dentro de um html.
+<iframe src="url" title="Descrição" height="200" width="300">
+É sempre bom definir uma largura e uma altura.
+É possível utilizar um link para renderizar a página dentro de um iframe,
+para isso basta definir um *name* para o iframe e no hiperlink utilizar
+o nome desse iframe na propriedade target.
+<a target="nameDoIframe">
