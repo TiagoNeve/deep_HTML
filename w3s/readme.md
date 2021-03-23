@@ -27,4 +27,14 @@ Formatação de textos dentro do html utilizando tags, como:
 ```
 
 ## Cochetes e citações
- 
+
+Utilizado para gerar citações e cochetes
+```html
+<blockquote> -> Define uma seção para a citação.
+<q> -> Cria umas aspas na área do texto.
+<abbr> -> Declara abreviações e é possível colcoar o título enssa abreviação.
+<address> -> Para informações de contato. Deve-se sempre utilizar essas declarações, considerando sempre a acessibilidade.
+<cite> -> Define o titulo de alguma obra de arte.
+<bdo> -> Define a forma de como as letras serão organizadas no html
+
+```
