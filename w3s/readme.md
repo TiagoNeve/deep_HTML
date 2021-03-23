@@ -162,3 +162,51 @@ condicional foi adicionada.
 O elemento picture é geralmente utilizado para o propósito de largura de banda,
 Suporte de formato de imagem, alguns browsers não reconhece alguns formatos,
 então utiliza alternativas de imagens em determinadas extensões.
+
+## Tabelas
+
+Utiliza o elemento <table>, depois define a primeira linha <tr> e as colunas dentro dessa linha <th> junto com os seus elementos.
+```html
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
+```
+É possível espandir uma coluna utilizando a propriedade colspan="número de colunas"
+<th colspan="2">
+Assim como é possível espandir as linhas utilizando a propriedade:
+rowspan="Número de linhas a espandir"
+<th rowspan="2">
+Existe a possíbilidade de atribuir um title a tabela, utilizando o elemento
+<caption>, ele deve estar dentro da tag <table>
+
+    Tag	Description
+    <table>	Defines a table
+    <th>	Defines a header cell in a table
+    <tr>	Defines a row in a table
+    <td>	Defines a cell in a table
+    <caption>	Defines a table caption
+    <colgroup>	Specifies a group of one or more columns in a table for formatting
+    <col>	Specifies column properties for each column within a <colgroup> element
+    <thead>	Groups the header content in a table
+    <tbody>	Groups the body content in a table
+    <tfoot>	Groups the footer content in a table
