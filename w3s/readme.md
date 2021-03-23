@@ -210,3 +210,33 @@ Existe a possíbilidade de atribuir um title a tabela, utilizando o elemento
     <thead>	Groups the header content in a table
     <tbody>	Groups the body content in a table
     <tfoot>	Groups the footer content in a table
+
+## Listas
+Temos as listas desordenadas <ul> e as ordeanadas <ol>, além de as listas
+descritivas <dl>
+```html
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+<ol>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+<dl>
+  <dt>Coffee</dt>
+  <dd>- black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>- white cold drink</dd>
+</dl>
+```
+É possível ter lista por dentro de listas, basta declarar qual o tipo de lista
+usando os elementos, <ul>, <ol>, <dl>
+
+Uma peculiaridade das listas ordenadas é a possibilidade de definir qual o tipo
+de ordenação que será utilizada, podendo ter letras, número ou algoritmos romanos.
+utilizando a propriedade <ol type="A">
+Outra peculiaridade é definir por qual núemro irá começar a ordenação, basta
+definir a propriedade <ol start="100">
