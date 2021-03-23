@@ -240,3 +240,16 @@ de ordenação que será utilizada, podendo ter letras, número ou algoritmos ro
 utilizando a propriedade <ol type="A">
 Outra peculiaridade é definir por qual núemro irá começar a ordenação, basta
 definir a propriedade <ol start="100">
+
+## Block e Inline elementos, Classes e Id
+
+Basicamente alguns elementos são display block ou inline, é possível alterar
+esse peculiaridade no css, os block organizam os elmentos um encima do outro
+já o inline colocam os elementos na mesma linha.
+
+Classes -> Utilizada para estilizar muitos elementos ao mesmo tempo e referenciar
+os mesmo no javascript
+
+Id -> Utilizado para estilizar apenas um elemento e referenciar apenas um elemento
+no javascript.
+
