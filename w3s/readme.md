@@ -83,3 +83,82 @@ a:active {}
 É possível ciruclar por dentro da página utilizando os links, basta definir um 
 id no elemento e hiperlinkar um texto com o href="#nomeDoId"
 ```
+## Imagem
+Utilizado para renderizar uma imagem no html, pode utilizar links absolutos
+ou relativos na escolha da imagem.
+```html
+<img src="url" alt="Texto alternativo">
+```
+É possível estilizar o tamanho da imagem utilizando css.
+Com as propriedades width e height.
+É possível colocar gifs na tag img, para que possa ser renderizado uma imagem 
+animada.
+A imagem pode flutuar entre os elementos, utilizando a proprieade CSS float.
+```html
+<img src="url" alt="Alternative" style="float:right or left or top">
+```
+    APNG	Animated Portable Network Graphics	.apng
+    GIF	Graphics Interchange Format	.gif
+    ICO	Microsoft Icon	.ico, .cur
+    JPEG	Joint Photographic Expert Group image	.jpg, .jpeg, .jfif, .pjpeg, .pjp
+    PNG	Portable Network Graphics	.png
+    SVG	Scalable Vector Graphics	.svg
+
+Mapa de imagem, é possível clicar em determinada áreas da imagem e hiperlinkar
+essas áreas para determinadas urls.
+```html
+<img src="workplace.jpg" alt="Workplace" usemap="#workmap">
+
+<map name="workmap">
+    <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+</map>
+```
+Primeiro é necessário definir uma imagem e seu map, com o atributo *usemap*
+Segundo, criar uma tag <map name="namemap"> com o atríbuto name para definir
+o id do map.
+Terceiro, definir as áreas clicáveis usando o elemento <area>, recebe alguns 
+parâmetros como shape: 
+* rect -> Uma área retangular
+* circle -> Uma área circular
+* poly -> Uma área poligonal
+* default -> A área total da imagem
+
+    RECT: É preciso definir as coordenadas da imagem que será clicada, para isso
+    pega-se a coordenada superior esquerda e depois a inferior direita, dessa 
+    forma a área vai pegar todo o conteúdo dessa região.
+
+    CIRCLE: Primeiro é preciso definir a coordenada x, y do centro do circulo,
+    depois basta definir o seu raio em pixels. (Mais fácil e.e)
+
+    POLY: É preciso de muitos pontos de coordenadas para definir a área clicável
+    de um poligono aleatório, sempre tente pegar o máximo de coordenadas possíveis.
+
+É possível utilizar javascript para definir o que acontece quando o image map for
+clicada, bastando utilizar a propriedade onclick=""
+
+Existe a possibilidade de utilizar uma imagem de fundo em CSS.
+utilizando as propriedades do background.
+```CSS
+body {
+    background-image: url('img.apng');
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Irá permitir que o elemento seja todo coberto */
+    background-size: cover; /* Irá cobrir todo o elemento */
+}
+```
+
+O elemento <picture> posibilita mostra diferentes imagens em diferentes tipos
+de dispositivos.
+Por exemplo, em determinado agente que solicitar a requisição não poder rodar
+determinada imagem, pode-se colocar outra no lugar dependo da forma que a 
+condicional foi adicionada.
+```html
+<picture>
+  <source media="(min-width: 650px)" srcset="img_food.jpg">
+  <source media="(min-width: 465px)" srcset="img_car.jpg">
+  <img src="img_girl.jpg">
+</picture>
+```
+O elemento picture é geralmente utilizado para o propósito de largura de banda,
+Suporte de formato de imagem, alguns browsers não reconhece alguns formatos,
+então utiliza alternativas de imagens em determinadas extensões.
