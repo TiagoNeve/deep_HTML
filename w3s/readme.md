@@ -262,3 +262,20 @@ Utilizado para mostrar outro html dentro de um html.
 para isso basta definir um *name* para o iframe e no hiperlink utilizar
 o nome desse iframe na propriedade target.
 <a target="nameDoIframe">
+
+## JavaScript
+
+Pode colocar scripts dentro do html para deixar a página dinâmica. 
+É necessário apenas declarar o elemento:
+<script> </script>
+Javascript pode mudar :
+1. Conteúdo textual
+2. Estilo de elemento
+3. Conteúdo de qualquer natureza.
+Utilizando formas de apontamento:
+
+```js
+document.getElementById("image").src = "picture.gif"
+```
+<noscript> Desculpe, seu browser não permite JS </noscript> -> Quando o browser
+está com o javascript desabilitado.
