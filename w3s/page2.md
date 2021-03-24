@@ -67,3 +67,11 @@ grandes mostra seus elementos horizontalmente, mas em telas pequenas usam.
 Frameworks de responsividade:
 W3.CSS -> https://www.w3schools.com/w3css/4/w3.css
 Bootstrap -> https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css
+
+## Computer Code Elementos
+
+<code> -> É possível colocar sintax no conteúdo.
+<kbd> -> Atalhos do teclado vão fazer determinada função.
+<samp> -> Mostra um output de tipo de programa de computador, sua font muda tbm
+<pre> -> Mostra exatamente como o texto é gerado, com espaços extras e \n
+<var> -> Define como variável e mostra em italic
