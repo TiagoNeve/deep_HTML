@@ -48,3 +48,102 @@ novalidate -> Informa que os dados do formulário não devem ser validados quand
     novalidate	Specifies that the form should not be validated when submitted
     rel	Specifies the relationship between a linked resource and the current document
     target	Specifies where to display the response that is received after submitting the form
+## Form Elements
+
+Existe vários elementos para o forms, cada qual com uma função diferente
+
+input -> O mais usado, pode ter diferentes formatos dependendo do tipo
+<input type="text" id="fname" name="fname">
+
+label -> Utilizado para ser a parte visual do usuário, também ajuda na parte de selecionar radio buttons e checkbox.
+<label for="nameElement"> -> for -> informa de qual elemento o label pertence.
+
+select -> Cria uma dropdown lista, com várias opções para selecionar.
+<select id="cars" name="cars" size="2" multiple> -> size, mostra de dois em dois valores / multiple, é possível selecionar várias opções, basta securar ctrl.
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat" selected>Fiat</option> -> Por padrão define o fiat
+    <option value="audi">Audi</option>
+</select>
+
+textarea -> Define um multi-line input campo.
+<textarea name="message" rows="10" cols="30">
+rows -> Informa a quantidade de linhas que pode ler
+cols -> Informa o tamanho da caixa de texto
+</textarea>
+
+button -> Define um botão clicável
+<button type="button" onclick="alert('Eae')">Click me </button>
+
+
+fieldset -> Informa que esse grupo é um campo relacionado a dados no form. Encapsula o formulário em sessões.
+legend -> Define um titulo para esse campo de input de dados
+```html
+<form action="/action_page.php">
+  <fieldset>
+    <legend>Personalia:</legend>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value="John"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value="Doe"><br><br>
+    <input type="submit" value="Submit">
+  </fieldset>
+</form>
+```
+
+datalist -> Define uma lista de opções pre-definidas. Bom para setar regiões.
+<form action="/action_page.php">
+  <input list="browsers">
+  <datalist id="browsers">
+    <option value="Internet Explorer">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
+</form>
+
+output -> Mostra a saída de alguma operação.
+<form action="/action_page.php"
+  oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+  0
+  <input type="range"  id="a" name="a" value="50">
+  100 +
+  <input type="number" id="b" name="b" value="50">
+  =
+  <output name="x" for="a b"></output>
+  <br><br>
+  <input type="submit">
+</form>
+
+    Tag	Description
+    <form>	Defines an HTML form for user input
+    <input>	Defines an input control
+    <textarea>	Defines a multiline input control (text area)
+    <label>	Defines a label for an <input> element
+    <fieldset>	Groups related elements in a form
+    <legend>	Defines a caption for a <fieldset> element
+    <select>	Defines a drop-down list
+    <optgroup>	Defines a group of related options in a drop-down list
+    <option>	Defines an option in a drop-down list
+    <button>	Defines a clickable button
+    <datalist>	Specifies a list of pre-defined options for input controls
+    <output>	Defines the result of a calculation
+
+## Input types
+
+Existe muitoss tipos de inputs, o legal seria conhecer cada um e saber um canto
+onde encontrar eles mais rapidamente para consulta depois.
+
+    Attribute	Description
+    checked	Specifies that an input field should be pre-selected when the page loads (for type="checkbox" or type="radio")
+    disabled	Specifies that an input field should be disabled
+    max	Specifies the maximum value for an input field
+    maxlength	Specifies the maximum number of character for an input field
+    min	Specifies the minimum value for an input field
+    pattern	Specifies a regular expression to check the input value against
+    readonly	Specifies that an input field is read only (cannot be changed)
+    required	Specifies that an input field is required (must be filled out)
+    size	Specifies the width (in characters) of an input field
+    step	Specifies the legal number intervals for an input field
+    value	Specifies the default value for an input field
