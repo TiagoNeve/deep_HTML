@@ -295,5 +295,7 @@ A tag meta <meta> é utilizado para definir os metadados da página.
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"> -> Configura a pag para ficar boa em qualquer dispositivo.
 
-
 ```
+<base> -> Define a url base para todas as urls que serão chamadas dentro do html.
+Dessa forma é possível colocar urls relativas e caso precise mudar o repositório
+dos arquivos, basta colocar os mesmo nas mesmas pastas e modificar apenas a base.
