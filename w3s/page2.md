@@ -75,3 +75,29 @@ Bootstrap -> https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.c
 <samp> -> Mostra um output de tipo de programa de computador, sua font muda tbm
 <pre> -> Mostra exatamente como o texto é gerado, com espaços extras e \n
 <var> -> Define como variável e mostra em italic
+
+## Semantic Elements
+
+Ajudam os search engines e devs a entender o que determinado pedaço de código faz
+No HTML semântico é possível utilizar algumas tags que facilitam a leitura do 
+código, como:
+
+<section> -> Define uma seção do documento, pode ter conteúdo e heading
+
+<article> -> Define um conteúdo único com seus próprio conteúdo, geralmente encontrado dentro de sections
+
+<header> -> Fica no topo da página, geralmente tem logos, titulos e navbars, também utilizados dentro de articles ou sections para informar o titulo desses.
+
+<footer> -> Define o rodapé da página, utilizado para informações sobre autores
+copyright, informações de contato, sitemap, documentos relacionados.
+
+<nav> -> Utilizado para englobar os principais links para navegação entre págs
+
+<aside> -> Define elementos ao lado do conteúdo principal, geralmente usado para
+navegação rápida dentro do artigo, outros artigos ou outras informações.
+
+<figure> -> Usado para englobar imagens no geral, ilustrações, etc
+<figcaption> -> Dá uma pequena descrição para a figura.
+
+
+
