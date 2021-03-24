@@ -279,3 +279,21 @@ document.getElementById("image").src = "picture.gif"
 ```
 <noscript> Desculpe, seu browser não permite JS </noscript> -> Quando o browser
 está com o javascript desabilitado.
+
+## Meta
+
+A tag meta <meta> é utilizado para definir os metadados da página.
+```html
+<meta charset="UTF-8"> -> Define os caracteres setados
+<meta name="keywords" content="HTML, CSS, JavaScript"> -> Define as palavras chaves da página HTML, Isso tudo ajuda os search engines encontrar a página mais facilmente, de acordo com a pesquisa do usuário.
+
+<meta name="description" content="Tutoriais grátis na web"> -> Define a descrição que irá aparecer no conteúdo de busca.
+
+<meta name="author" content="Tiago"> -> Informa quem foi o autor da pag
+
+<meta http-equiv="refresh" content="30"> -> A pag vai atualizar a cada 30 segundos
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> -> Configura a pag para ficar boa em qualquer dispositivo.
+
+
+```
