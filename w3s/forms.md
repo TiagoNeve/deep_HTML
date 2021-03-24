@@ -147,3 +147,35 @@ onde encontrar eles mais rapidamente para consulta depois.
     size	Specifies the width (in characters) of an input field
     step	Specifies the legal number intervals for an input field
     value	Specifies the default value for an input field
+## Input Attributes
+
+readonly -> Informa que o input será apenas para leitura, não podendo editar.
+
+disabled -> Informa que o input não poderá ser clicado.
+
+size -> Informa até onde o elemento pode ser visto dentro do input.
+
+maxlength -> Informa o tamanho do elemento que pode ser inputado, muito importante
+para que fique em ordem com o banco de dados da aplicação.
+
+min e max -> Usado para definir os valors mínimos e máximos de inputs de números
+
+multiple -> Informa que multiplos elementos podem ser selecionados.
+
+pattern -> Utiliza de expressões regulares para validar um input.
+
+placeholder -> Dá um exemplo prévio de como o input deve ser usado.
+
+required -> Informa se aquele input é necessário para ativar o submit
+
+step -> Define a quantidade de passos numéricos que um input pode ter.
+
+autofocus -> Quando a página carregar o elemento que tiver esse atributo vai ser 
+focado primeiro.
+
+height e width -> Define a altura e largura, respectivamente.
+
+list -> Define uma lista de acordo com um datalist prévio e referenciando com o id do datalist.
+
+autocomplete -> Define se o input vai poder acessar o histórico de inputs do usuário, vem habilitado por padrão
+
