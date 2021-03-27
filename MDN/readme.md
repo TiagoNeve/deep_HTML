@@ -13,3 +13,19 @@ mesma linha um com o outro.
 Nem todas as tags precisam de uma tag de fechamento, esses que não precisam são
 chamados de elementos vazios, no final eles tem um / para informa que está se fechando.
     <img src="url" />
+## Atributos
+As tags elementos podem ter atributos com características próprias
+    <p class="class é o atributo"> 
+
+## Atributos Booleanos
+Esses atributos são aqueles que podem ser editáveis ou não.
+    <input type="text" disabled="disabled">
+## Elementos especiais no HTML
+Para utilizar esses elementos especiais deve-se utilizar da notação &-comercial
+    < -> &lt; 
+    > -> &gt;
+    " -> &quot;
+    ' -> &apos;
+    & -> &amp;
+## Comentários
+    <!-- O comentário vem aqui dentro -->
