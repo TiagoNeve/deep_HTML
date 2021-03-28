@@ -63,3 +63,30 @@ essa imagem no lado do titulo e também na parte de favoritos.
 ## CSS e JavaScript
 CSS -> Definido no head para poder carregar os estilos junto com as pags
 JavaScript -> Recomenda-se colocar no final da pag, para que o html e css carregue antes de realizar alguma operação com JS.
+
+# Fundamentos do texto em HTML
+## O básico: Cabeçalhos e Parágrafos
+<p> -> Parágrafos
+<h1> -> Títulos e subtítulos
+Necessário para os temos de SEO. Basicamente é necessário também para questão de
+acessibilidade e também para uma fácil estilização do site.
+
+## Por que precisamos de semântica?
+Para estabelecer um padrão de leitura pelos browsers e também pelo SEO.
+Além de considerar a acessibilidade do site.
+No caso, é possível utilizar qualquer elemento e estilizar em CSS, mas esse 
+elemento perde o sentido semântico e nem os SEO e os sistemas de leitura de 
+tela para deficientes visuais irá entender o que aquele elemento é.
+
+## Listas
+<ul> -> Listas não ordenadas
+<li> -> Cada item da lista
+<ol> -> Lista ordenada
+É possível aninhar listas, utilizando tipo de listas diferentes.
+
+## Importância e Ênfase
+<strong> -> Importância no conteúdo
+<em> -> Ênfase para o que está sendo dito.
+Não se deve mais utilizar <b> ou <i>, pois isso não trás nenhum função semântica
+ao código html. Utilizado apenas para estilizar quando o CSS não era tão presente
+assim. Portante deve-se escapar dessas tags de apresentação.
