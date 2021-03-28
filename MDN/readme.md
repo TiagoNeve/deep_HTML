@@ -90,3 +90,14 @@ tela para deficientes visuais irá entender o que aquele elemento é.
 Não se deve mais utilizar <b> ou <i>, pois isso não trás nenhum função semântica
 ao código html. Utilizado apenas para estilizar quando o CSS não era tão presente
 assim. Portante deve-se escapar dessas tags de apresentação.
+
+# Criando Hyperlinks
+
+## O que é um hiperlink
+São utilizados para conectar outros sites e apps, com o intuito de demonstrar 
+uma informação mais detalhada em determinado site ou apenas servir uma referência
+externa. Seu principal intuito é conectar sites.
+
+<a href="url" title="Pequeno titulo ao deixar o mouse hover">
+É possível transformar imagens em links, na verdade é possível transformar 
+qualquer coisa em link, basta cobrir o seu elemento com a tag <a> a</a>
